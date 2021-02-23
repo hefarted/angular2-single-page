@@ -1,0 +1,166 @@
+
+#services{
+    height: 600px;
+}
+.services-header{
+    margin:60px 30px;
+}
+.services-content-a {
+    background-image: url('../../../assets/services/puppy_01_2x.png');
+    background-position: center;
+    color: #fdffff;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+.services-content-a .brand{
+    margin-top: 100px;
+    
+}
+.services-content-a  a{
+    color:#fdffff;
+}
+.services-content-a img{
+
+    background-color:#EBD0CE;
+    background-size: cover;
+    border-radius: 60px;
+
+}
+.services-content-b{
+    width:100%;
+    padding: 0;
+}
+.section .col-md-8 , .section .col-md-4{
+  
+    padding: 0;
+  }
+
+.services-form h2{
+    text-align: center;
+    font-size: 64px;
+    color: #545871;
+}
+
+.services-form input::placeholder{
+    color: #EBD0CE;
+}
+
+.services-form textarea::placeholder{
+    color: #EBD0CE;
+}
+
+.services-form label{
+    color:#9597A6;
+}
+.services-form button[type=submit]{
+    margin-top: 50px;
+    background-color: #545871;
+    border-color: #545871;
+    padding: 1rem 2.5rem;
+    border-radius: 60px;
+    font-size: 31px;
+}
+.services-content-a h2{
+    text-align: center;
+    font-size: 64px;
+}
+
+.services-content-a li{
+    font-size: 31px;
+    font-weight: 100;
+    line-height: 4rem;
+}
+
+.services-content-b{
+    background: #F7ECEB;
+    width: 100%;
+}
+.services-content-b .services-form{
+    width: 80%;
+    padding:1.5rem 2rem;
+    margin:auto;
+
+}
+.services-content-b h1{
+    text-align: center;
+}
+.services-content-b #sched-date{
+    height: 100%;
+}
+.frequency-selector{
+      background: #fdffff;
+     
+      /* display: inline-block; */
+  }
+.frequency-selector input {
+    display: none!important;
+  }
+  
+.frequency-selector input[type=radio] + label {
+    display: inline-block;
+    border-radius: 6px;
+    background: #fdffff;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+    height: 100%;
+    width: 50%;
+    margin: 8px auto;
+  }
+
+.frequency-selector input[type=radio]:checked + label {
+    background:#EBD0CE;
+    color: #ffffff;
+  }
+
+.weekDays-selector{
+      
+      display: flex;
+  }
+
+.weekDays-selector input {
+    display: none!important;
+  }
+
+.weekDays-selector input[type=checkbox] + label {
+    /* display: inline-block; */
+    border-radius: 6px;
+    background: #fdffff;
+    margin-right: 3px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.weekDays-selector input[type=checkbox]:checked + label {
+    background:#EBD0CE;
+    color: #ffffff;
+}
+
+.weekDaysTime-selector{
+      
+    display: flex;
+}
+
+.weekDaysTime-selector input {
+  display: none!important;
+}
+
+.weekDaysTime-selector input[type=checkbox] + label {
+  /* display: inline-block; */
+  border-radius: 6px;
+  background: #fdffff;
+  margin-right: 3px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.weekDaysTime-selector input[type=checkbox]:checked + label {
+  background:#EBD0CE;
+  color: #ffffff;
+}

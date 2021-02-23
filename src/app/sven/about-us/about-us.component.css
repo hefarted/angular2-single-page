@@ -1,0 +1,78 @@
+.section{
+    padding: 5% 0;
+    background-color: #fdffff;
+}
+.row{
+    padding: 2% 0;
+}
+
+#about-us .about-us-content{
+    width: 80%;
+    margin: auto;
+    color: #545871;
+}
+
+#about-us .about-us-content h1{
+    font-size: 72px;
+    margin-bottom: 50px;
+}
+
+#about-us .about-us-content p{
+    font-size: 31px;
+}
+
+
+
+.about-sched-btn{
+    margin-top: 50px;
+    background-color: #545871;
+    border-color: #545871;
+    padding:1rem 2.5rem;
+    border-radius: 60px;
+    font-size:31px; 
+}
+
+.grid-container {
+  margin-top: 80px;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  .grid-item {
+    height: 250px;
+    width: 250px;
+  }
+  .grid-item{
+      color:#fdffff;
+  }
+
+  .grid-item-a{
+    background-image: url('../../../assets/pets/Group_424_2x.png');
+    background-size: cover;
+    position: relative;
+  }
+  .grid-item-b{
+    background-image: url('../../../assets/pets/Group_423_2x.png');
+    background-size: cover;
+    position: relative;
+  }
+  .grid-item-c{
+    background-image: url('../../../assets/pets/Group_425_2x.png');
+    background-size: cover;
+    position: relative;
+  }
+  .grid-item-d{
+    background-image: url('../../../assets/pets/Group_422_2x.png');
+    background-size: cover;
+    position: relative;
+  }
+  .grid-item-a p,.grid-item-b p,.grid-item-c p,.grid-item-d p{
+      position: absolute;
+      bottom: 0;
+      font-size: 16px!important;
+      margin:10px 10px;
+  }
+  

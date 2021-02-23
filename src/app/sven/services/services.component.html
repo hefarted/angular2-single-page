@@ -1,0 +1,150 @@
+<div class="section" id="services">
+    <div class="row">
+        <div class="main-content col-md-4">
+            <div class="services-content services-content-a">
+                <div class="row">
+                   <div class="col">
+                        <div class="d-flex justify-content-center bd-highlight mb-3">
+                            <div class="p-2 bd-highlight services-header">
+                                <a class="navbar-brand" pageScroll href="#logo">
+                                <img id="logo" src="../../../assets/logo/Group_247_2x.png" alt="">
+                                PAWTASTIC  
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <h2>All services include</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center bd-highlight mb-3">
+                            <div class="p-2 bd-highlight services-header">
+                                <ul>
+                                    <li>A photo update for you along</li>
+                                    <li>Notification of sitter arrival</li>
+                                    <li>Treats for your pet, with your</li>
+                                </ul>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content col-md-8">
+            <div class="services-content services-content-b">
+                <div class="services-form">
+                    <h2>We'll take your dog for a walk. Just tell us when!</h2>
+                <form  (ngSubmit)="onSubmit()"  >
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Frequency</label>        
+                        </div>
+                        <div class="col-md-6">
+                            <label>Start Date</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        
+                        <div class="col-md-6">
+                            <div class="col frequency-selector">
+                                <input type="radio" id="frequency-recurring" class="frequency" name="frequency" value="Recurring" [(ngModel)]="model.frequency" /> 
+                                <label for="frequency-recurring">Recurring</label>
+                                <input type="radio" id="frequency-one-time" class="frequency" name="frequency" value="One time" [(ngModel)]="model.frequency"/>
+                                <label for="frequency-one-time">One time</label>
+                            </div>        
+                        </div>
+                        <div class="col-md-6">
+                            <input class="col form-control" id="sched-date" name="schedule-date" type="text" placeholder="mm/dd/yyyy" [(ngModel)]="model.scheduleDate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Days Select all that apply</label>
+                          
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <!-- <div class="weekDays-selector">
+                                <div *ngFor="let data of days">
+                                    <input  type="checkbox" id="weekday-{{data.day}}" class="weekday"  />
+                                    <label for="weekday-{{data.day}}">{{data.day}}</label>
+                                </div>
+                            </div> -->
+                            
+                            <div class="weekDays-selector">
+                                <input type="checkbox" id="weekday-mon" class="weekday" value="mon"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)"  />
+                                <label for="weekday-mon">Mon</label>
+                                <input type="checkbox" id="weekday-tue" class="weekday" value="tue"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)" />
+                                <label for="weekday-tue">Tue</label>
+                                <input type="checkbox" id="weekday-wed" class="weekday" value="wed"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)" />
+                                <label for="weekday-wed">Wed</label>
+                                <input type="checkbox" id="weekday-thu" class="weekday" value="thu"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)"/>
+                                <label for="weekday-thu">Thu</label>
+                                <input type="checkbox" id="weekday-fri" class="weekday" value="fri"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)" />
+                                <label for="weekday-fri">Fri</label>
+                                <input type="checkbox" id="weekday-sat" class="weekday" value="sat"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)"/>
+                                <label for="weekday-sat">Sat</label>
+                                <input type="checkbox" id="weekday-sun" class="weekday"  value="sun"
+                                (change)="onChangeScheduleDay($event.target.value , $event.target.checked)"/>
+                                <label for="weekday-sun">Sun</label> 
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Time Select all that apply</label>
+                          
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <div class="weekDaysTime-selector">
+                                <input type="checkbox" id="weekdayTime-morning" class="weekday" value="morning"
+                                (change)="onChangeScheduleDayTime($event.target.value , $event.target.checked)"  />
+                                <label for="weekdayTime-morning">Morning</label>
+                                <input type="checkbox" id="weekdayTime-afternoon" class="weekday" value="afternoon"
+                                (change)="onChangeScheduleDayTime($event.target.value , $event.target.checked)"  />
+                                <label for="weekdayTime-afternoon">Afternoon</label>
+                                <input type="checkbox" id="weekdayTime-evening" class="weekday" value="evening"
+                                (change)="onChangeScheduleDayTime($event.target.value , $event.target.checked)"  />
+                                <label for="weekdayTime-evening">Evening</label>
+                               
+                              </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class="col">
+                            <label>Notes for your sitter</label>
+                          
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="model.notes"
+                            placeholder="Route preferences, leash location, treats given,etc." rows="3"   
+                             ></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" type="submit">Schedule Service</button>
+                        </div>
+                      </div>
+                   
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

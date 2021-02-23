@@ -1,0 +1,57 @@
+#header{
+    background-image: url('../../../assets/header/bg_2x.png');
+    background-size: cover;
+    background-position: bottom center;
+}
+#header #title h1{
+    color:#fff;
+    font-size: 72px;
+    padding-bottom: 10px;
+
+}
+
+#header .header-content{
+    margin:40px;
+    /* padding:40px 80px; */
+}
+#header .header-content-a p{
+    margin: 100px 100px 0 0;
+    position: absolute; 
+    bottom: 0px;
+    color:#fff; 
+    font-size:27px;
+}
+#header .header-content-b{
+    width: 80%;
+    margin: auto;
+    
+}
+#logo{
+    background-color: #fff;
+    border-radius: 60px;
+}
+.section{
+    padding: 5% 0;
+}
+.row{
+    padding: 2% 0;
+}
+
+.sched-btn{
+    margin-top: 50px;
+    padding:1rem 2.5rem;
+    border-radius: 60px; 
+    font-size: 31px;
+    background-color: #fff;
+    border-color: #fff;
+    color:#545871;
+}
+
+
+/* .row{
+    /* width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+} */ 
+
